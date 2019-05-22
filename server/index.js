@@ -27,11 +27,11 @@ app.post('/api/signout', authController.signout)
 app.get('/api/user', authController.getUser)
 
 app.get('/api/swag', swagController.read)
-//cart
+//cart this is what handles the cart
 app.post('/api/cart/checkout', cartController.checkout)
 app.post('/api/cart/:id', cartController.add)
 app.delete('/api/cart/:id', cartController.delete)
 // search
 app.get('/api/search', searchController.search)
 
-app.listen(SERVER_PORT, () => console.log(`listening on ${SERVER_PORT}`))
+app.listen(SERVER_PORT, () => console.log(`magic is happening on ${SERVER_PORT}`))
